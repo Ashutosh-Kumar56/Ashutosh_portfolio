@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.shadow-primary {
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.5); /* Bootstrap primary blue */
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.nav-item-hover {
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-item-hover:hover {
+  color: #0d6efd;
+}
+
+.nav-item-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: #0d6efd; /* primary */
+  transition: width 0.3s ease;
+}
+
+.nav-item-hover:hover::after {
+  width: 100%;
+}
+
+.nav-text {
+  position: relative;
+}
+
+
+.nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+
+
+.nav-link:focus,
+.nav-link:active {
+  color: #0d6efd; /* Your desired active color */
+  font-weight: bold; /* optional */
 }
